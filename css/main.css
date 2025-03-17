@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Gustavo Regular";
+    src: url("fonts/Gustavo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Gustavo Regular", sans-serif;
+}
+
+.banner {
+  height: 600px;
+}
+    .image-container {
+      display: flex;
+      gap: 30px;               /* Khoảng cách giữa 2 ảnh */
+      justify-content: center; /* Canh giữa nội dung */
+    }
+    /* Hộp chứa mỗi hình: cố định chiều cao và giới hạn chiều rộng */
+    .img-wrapper {
+      flex: 1;               /* Mỗi hộp chiếm không gian bằng nhau */
+      max-width: 300px;      /* Giới hạn chiều rộng tối đa */
+      height: 235px;         /* Chiều cao cố định để đảm bảo kích thước bằng nhau */
+      overflow: hidden;      /* Ẩn phần vượt quá hộp */
+    }
+    /* Ảnh bên trong hộp: ép đầy khung theo tỉ lệ */
+    .img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;     /* Cắt xén ảnh nếu cần, đảm bảo ảnh luôn đầy khung */
+	  border-radius: 20px;
+    }
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.banner-logo {
+  width: 55px;
+  height: 60px;
+  background: url("../images/v72_1335.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 66px;
+  left: 63px;
+}
+
+.banner-menu {
+  position: absolute;
+  top: 76px;
+  width: calc(100% - 3rem);
+  text-align: center;
+}
+
+.banner-menu > span {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.banner-title {
+  color: rgba(255, 255, 255, 1);
+  font-weight: Bold;
+  font-size: 80px;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.banner-button {
+  z-index: 1;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 12px 30px;
+  font-weight: bold;
+}
+
+.banner-button:hover {
+  background-color: #45a049;
+}
+
+.footer {
+  width: 100%;
+  box-shadow: 0px -7px 35px rgba(0, 0, 0, 0.25);
+}
+
+.footer img {
+  width: 126px;
+  height: 137px;
+}
+
+.footer p {
+  margin: 10px 0; /* Khoảng cách giữa các dòng */
+  display: flex; /* Dùng flexbox để icon và text trên cùng 1 hàng */
+  align-items: center; /* Căn giữa icon và văn bản theo chiều dọc */
+
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+}
+
+.footer .icon {
+  width: 25px; /* Kích thước icon */
+  height: 25px;
+  margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.span-cursor {
+  cursor: pointer;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 1);
+  padding: 10px;
+}
+
+.label {
+  color: rgba(37, 37, 37, 1);
+  font-weight: Bold;
+  font-size: 45px;
+  text-align: center;
+}
+
+.title {
+  color: rgba(37, 37, 37, 1);
+  font-weight: Bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.title-color {
+  color: rgba(37, 37, 37, 0.800000011920929);
+}
+
+.description {
+  margin-top: 10px;
+  color: rgba(37, 37, 37, 0.800000011920929);
+  font-size: 20px;
+}
+
+.banner-card-top {
+  width: 90%;
+  height: 204px;
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  position: absolute;
+  top: -100px;
+  border-radius: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box-image {
+  display: flex; /* Sắp xếp theo hàng */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các ảnh */
+  flex-wrap: wrap; /* Đảm bảo ảnh xuống dòng khi màn hình hẹp */
+  gap: 10px; /* Khoảng cách giữa các ảnh (tuỳ chỉnh) */
+}
+
+.box-image > img {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước container */
+  height: auto; /* Đảm bảo giữ tỷ lệ ảnh */
+  max-height: 239px; /* Đảm bảo giữ tỷ lệ ảnh */
+  border-radius: 20px;
+}
+
+.box-image > img.box-img-1 {
+  width: calc(100%); /* Chia đều 1 ảnh với khoảng cách giữa */
+}
+
+.box-image > img.box-img-2 {
+  width: calc(50% - 5px); /* Chia đều 2 ảnh với khoảng cách giữa */
+}
+
+.box-image > img.box-img-3 {
+  width: calc(33.333% - 10px); /* Chia đều 3 ảnh với khoảng cách giữa */
+}
+
+.box-image > img.box-img-4 {
+  width: calc(25% - 10px); /* Chia đều 4 ảnh với khoảng cách giữa */
+}
+
+.h-526 {
+  height: 426px;
+}
+
+.box-calculator {
+  background: rgba(99, 174, 64, 1);
+}
+
+.cal-title {
+  color: rgba(255, 255, 255, 1);
+  font-weight: Bold;
+  font-size: 48px;
+  text-align: center;
+}
+
+.cal-subtitle {
+  color: rgba(255, 255, 255, 1);
+  font-weight: Bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cal-card-top {
+  width: 90%;
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  position: absolute;
+  left: 50%; /* Dịch chuyển đến giữa chiều ngang */
+  transform: translate(-50%, -50%); /* Điều chỉnh để canh giữa */
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cal-input-label {
+  color: rgba(0,0,0,1);
+  font-size: 24px;
+  text-align: left;
+}
+
+.cal-input {
+  background: rgba(217,217,217,1);
+  border-radius: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 20px 0px;
+  color: rgba(37, 37, 37, 0.800000011920929);
+  font-size: 10px;
+}
+
+.selected {
+  color: #4CAF50;
+}
+
+.content {
+  display: none; /* Ẩn nội dung mặc định */
+}
+
+.content.active {
+  display: flex; /* Hiển thị thẻ khi active */
+}

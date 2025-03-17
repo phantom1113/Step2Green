@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="banner position-relative pt-5 pl-4 pr-4">
+        <div class="banner-logo"></div>
+        <div class="banner-menu">
+            <span onclick="goPages('index.html')" class="cursor-p">Trang chủ</span>
+            <span onclick="goPages('about.html')" class="cursor-p">Về chúng tôi</span>
+            <span onclick="goPages('about.html#boxcalculator')" class="cursor-p">Máy tính dấu chân</span>
+        </div>
+        <div class="background-image" style="background-image: url('./images/v72_1326.jpg');">
+            <div class="banner-title">
+                Mừng bạn đến với Step2Green
+            </div>
+            <button onclick="goPages('about.html#boxcalculator')" class="banner-button">
+                Tính ngay
+            </button>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="mt-4">
+            <div class="label mb-4">Về Chúng Tôi</div>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="description text-justify">
+                        <div>Bạn có bao giờ tự hỏi những thói quen hằng ngày ảnh hưởng đến môi trường như thế nào?</div>
+                        <div>
+                            Lượng phát thải bình quân đầu người của Việt Nam đã tăng gấp đôi trong thập kỷ qua, đạt
+                            ngưỡng 3.8 triệu tấn. Vấn đề biến đổi khí hậu không còn là câu chuyện của tương lai, giờ đây
+                            nó đang là
+                            chuyện cấp bách mà chúng ta cần phải giải quyết ngay bây giờ. Hiểu được mức độ nghiêm trọng
+                            của vấn đề này,
+                            Step2Green mong muốn cung cấp công cụ đo lường dấu chân carbon cá nhân để cá nhân có thể
+                            đánh giá được mức
+                            độ tác động lên môi trường để mọi người đều hiểu và chủ động giảm dấu chân carbon của mình
+                            để bảo vệ hành
+                            tinh.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 box-image">
+				<div class="image-container">
+				<div class="img-wrapper"><img src="./images/v20_26.jpg" class="box-img-2" alt="Hình 1"></div>
+				<div class="img-wrapper"><img src="./images/v20_31.jpg" class="box-img-2" alt="Hình 2"></div>
+				</div>
+            </div>
+
+        </div>
+
+        <div class="mt-4">
+            <div class="label mb-4">Dấu Chân Carbon Là Gì ?</div>
+            <div class="description text-center">
+                Dấu chân carbon đề cập đến tổng lượng khí nhà kính, chủ yếu là carbon dioxide
+                (CO2), được thải ra trực tiếp hoặc gián tiếp bởi một cá nhân, tổ chức hoặc quốc gia. Những khí thải này
+                xuất
+                phát từ việc tiêu thụ năng lượng, giao thông, nông nghiệp và sản xuất. Dấu chân carbon là một số liệu
+                quan
+                trọng để hiểu và giảm thiểu tác động của các hoạt động của con người đối với biến đổi khí hậu.
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="label mb-4">Dấu Chân Carbon Cá Nhân Được Tạo Ra Từ:</div>
+
+            <div class="h-526" style="margin-top: 100px;">
+                <div class="background-image position-relative" style="background-image: url('./images/image.png')">
+                    <div class="banner-card-top">
+                        <div class="row align-items-start">
+                            <div class="col-md-3">
+                                <p class="font-weight-bold title-color">
+                                    Tiêu thụ năng lượng từ hộ gia đình
+                                </p>
+                                <div class="border border-5"></div>
+                                <p style="font-size: 12px;">
+                                    Năng lượng điện, Dầu diesel, LPG/Butane/Propane, Than đá
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="font-weight-bold title-color">
+                                    Thức ăn
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="border border-5"></div>
+                                <p style="font-size: 12px;">
+                                    Rau củ quả, Trái cây tươi,Hạt Cá & Hải sản, Thịt & Trứng, Sữa & Dầu, Bia & Rượu
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="font-weight-bold title-color">
+                                    Quần áo
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="border border-5"></div>
+                                <p style="font-size: 12px;">
+                                    Tất, Đồ lót, Quần, Áo, Váy, Đầm
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="font-weight-bold title-color">
+                                    Phương tiện
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="border border-5"></div>
+                                <p style="font-size: 12px;">
+                                    Xe máy, Xe hơi, Xe bus, Tàu lửa, Máy bay
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="font-weight-bold title-color">
+                                    Công nghệ & những thứ khác &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="border border-5"></div>
+                                <p style="font-size: 12px;">
+                                    Thiết bị công nghệ, Đồ ăn thú cưng, Thuốc lá
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-image mt-3">
+                <img src="./images/Frame_14243.jpg" class="box-img-3" alt="Hình 1">
+                <img src="./images/Frame_14244.jpg" class="box-img-3" alt="Hình 2">
+                <img src="./images/Frame_14245.jpg" class="box-img-3" alt="Hình 3">
+            </div>
+
+            <div class="box-image mt-3">
+                <img src="./images/image2.png" class="box-img-1" style="max-height: 426px;" alt="Hình 1">
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6">
+                <div class="label text-left mb-4">Dấu Chân Carbon Của Bạn Đậm Đến Mức Nào ?</div>
+                <div class="description text-justify mb-4">
+                    Biến đổi khí hậu đã trở thành một thách thức lớn của toàn cầu. Mỗi hành động nhỏ đều có thể tạo ra
+                    được sự thay đổi lớn cho hành tinh. Hãy bắt đầu ngay với công cụ tính dấu chân carbon để hiểu rõ tác
+                    động của bạn và cùng chung tay giảm thiểu dấu chân carbon vì lợi ích môi trường.
+                </div>
+                <button onclick="goPages('about.html#boxcalculator')" class="banner-button">
+                    Tính ngay
+                </button>
+            </div>
+            <div class="col-md-6">
+                <div class="box-image">
+                    <img src="./images/Frame_14246.jpg" class="box-img-1" style="max-height: 100%;" alt="Hình 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-image mt-4">
+            <img src="./images/Frame_14358.jpg" class="box-img-4" alt="Hình 1">
+            <img src="./images/Frame_14360.png" class="box-img-4" alt="Hình 2">
+            <img src="./images/Frame_14361.jpg" class="box-img-4" alt="Hình 3">
+            <img src="./images/Frame_14362.jpg" class="box-img-4" alt="Hình 4">
+        </div>
+
+    </div>
+
+    <div id="boxcalculator" class="box-calculator">
+        <div class="cal-title"> Máy Tính Dấu Chân Carbon Cá Nhân </div>
+        <div class="cal-subtitle"> (Theo tháng) </div>
+
+        <div style="margin-top: 100px;" class="pl-5 pr-5 pb-5">
+            <div class="card position-relative" style="border-radius: 20px;">
+                <div class="cal-card-top">
+                    <div id="selector" class="row align-items-center">
+                        <div data-target="content1"
+                            class="option selected col-md-3 d-flex align-items-center justify-content-center cursor-p">
+                            <img id="img-content1" src="./images/home-selected.png" class="icon">
+                            <div class="border border-4 ml-2 mr-2" style="height: 50px;"></div>
+                            <div class="font-weight-bold">Tiêu thụ năng lượng từ hộ gia đình</div>
+                        </div>
+                        <div data-target="content2"
+                            class="option col-md-3 d-flex align-items-center justify-content-center cursor-p">
+                            <img id="img-content2" src="./images/map.png" class="icon">
+                            <div class="border border-4 ml-2 mr-2" style="height: 50px;"></div>
+                            <div class="font-weight-bold">Phương tiện di chuyển</div>
+                        </div>
+                        <div data-target="content3"
+                            class="option col-md-3 d-flex align-items-center justify-content-center cursor-p">
+                            <img id="img-content3" src="./images/burger.png" class="icon">
+                            <div class="border border-4 ml-2 mr-2" style="height: 50px;"></div>
+                            <div class="font-weight-bold">Thức ăn</div>
+                        </div>
+                        <div data-target="content4"
+                            class="option col-md-3 d-flex align-items-center justify-content-center cursor-p">
+                            <img id="img-content4" src="./images/money.png" class="icon">
+                            <div class="border border-4 ml-2 mr-2" style="height: 50px;"></div>
+                            <div class="font-weight-bold">Tiêu dùng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-container">
+                    <div id="content1" class="content active row pb-5 pr-5 pl-5 align-items-center"
+                        style="margin-top: 100px;">
+                        <div class="col-md-8">
+                            <div class="row mt-4 align-items-center">
+                                <div class="col-md-5 cal-input-label">
+                                    Điện
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipdien" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kWh
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Khí tự nhiên
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipkhitunhien" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    m³
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Dầu Diesel
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipdau" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    lít
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    LPG/Butane/Propane
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="iplbp" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    lít
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Than đá
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipthanda" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <button onclick="onCalHoGiaDinh()" class="banner-button mt-4">
+                                Tính ngay
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-image">
+                                <img src="./images/image_4.jpg" class="box-img-1" style="max-height: 100%;"
+                                    alt="Hình 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content2" class="content row pb-5 pr-5 pl-5 align-items-center" style="margin-top: 100px;">
+                        <div class="col-md-8">
+                            <div class="row mt-4 align-items-center">
+                                <div class="col-md-5 cal-input-label">
+                                    Ô tô
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipoto" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    km
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Xe máy
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipxemay" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    km
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Tàu hỏa
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="iptauhoa" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    km
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Xe buýt
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipxebuyt" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    km
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Máy bay
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipmaybay" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    km
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Phà
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ippha" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    km
+                                </div>
+                            </div>
+                            <button onclick="onCalPhuongTienDiChuyen()" class="banner-button mt-4">
+                                Tính ngay
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-image">
+                                <img src="./images/image_2.jpg" class="box-img-1" style="max-height: 100%;"
+                                    alt="Hình 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content3" class="content row pb-5 pr-5 pl-5 align-items-center" style="margin-top: 100px;">
+                        <div class="col-md-8">
+                            <div class="row mt-4 align-items-center">
+                                <div class="col-md-5 cal-input-label">
+                                    Rau củ quả
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipraucuqua" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Trái cây tươi
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="iptraicaytuoi" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Hạt
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="iphat" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Cá & Hải sản
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipcahaisan" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Heo
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipheo" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Bò
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipbo" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Gà
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipga" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Trứng
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="iptrung" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    kg
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Sữa & Dầu
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipsuadau" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    lít
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Bia & Rượu
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipbiaruou" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    lít
+                                </div>
+                            </div>
+                            <button onclick="onCalThucAn()" class="banner-button mt-4">
+                                Tính ngay
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-image">
+                                <img src="./images/image_1.jpg" class="box-img-1" style="max-height: 100%;"
+                                    alt="Hình 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content4" class="content row pb-5 pr-5 pl-5 align-items-center" style="margin-top: 100px;">
+                        <div class="col-md-8">
+                            <div class="row mt-4 align-items-center">
+                                <div class="col-md-5 cal-input-label">
+                                    Quần áo
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipquanao" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    VND
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Thiết bị điện tử
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipthietbidientu" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    VND
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Thức ăn cho thú cưng
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipthucanchothucung" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    VND
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Ở khách sạn
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipokhachsan" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    ngày
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-5 cal-input-label">
+                                    Thiết bị điện
+                                </div>
+                                <div class="col-md-5">
+                                    <input id="ipthietbidien" type="text" class="form-control cal-input numberInput">
+                                </div>
+                                <div class="col-md-2 cal-input-label">
+                                    VND
+                                </div>
+                            </div>
+                            <button onclick="onCalTieuDung()" class="banner-button mt-4">
+                                Tính ngay
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box-image">
+                                <img src="./images/image_3.jpg" class="box-img-1" style="max-height: 100%;"
+                                    alt="Hình 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pl-5 pr-5 pb-5">
+            <div class="card" style="border-radius: 20px;">
+                <div class="row align-items-center mt-3 mb-3">
+                    <div class="col-md-4 cal-input-label" style="font-size: 40px; text-align: end;">
+                        Tổng
+                    </div>
+                    <div class="col-md-5">
+                        <input id="ipTong" type="text" class="form-control cal-input numberInput" style="font-size: 40px;" disabled>
+                    </div>
+                    <div class="col-md-3 cal-input-label" style="font-size: 40px;">
+                        kgCO2e
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row no-gutters pt-3">
+            <div class="col-md-7 pl-5 pb-4">
+                <img src="./images/v72_1347.png" alt="Logo" />
+            </div>
+            <div class="col-md-5">
+                <p>Liên hệ chúng tôi</p>
+                <p>
+                    <img src="./images/telephone.png" alt="Icon Điện thoại" class="icon">
+                    (+84) 869 880 907
+                </p>
+                <p>
+                    <img src="./images/mail.png" alt="Icon Email" class="icon">
+                    step2green2024@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="row no-gutters pb-4 mt-2">
+            <div class="col-md-7 pl-5">
+                <span onclick="goPages('index.html')" class="span-cursor">Trang chủ</span>
+                <span onclick="goPages('about.html')" class="span-cursor">Về chúng tôi</span>
+                <span onclick="goPages('about.html#boxcalculator')" class="span-cursor">Máy tính dấu chân</span>
+            </div>
+            <div class="col-md-5 ">
+			<span onclick="goPages('https://www.facebook.com/profile.php?id=100087393272092')" class="span-cursor"><img src="./images/facebook.png" alt="Icon facbook" class="icon"></span>
+			<span onclick="goPages('https://www.tiktok.com/@step2green')" class="span-cursor"><img src="./images/tiktok.png" alt="Icon tiktok" class="icon"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/calculator.script.js"></script>
+</body>
+
+</html>
